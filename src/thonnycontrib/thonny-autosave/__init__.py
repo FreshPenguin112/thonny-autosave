@@ -18,7 +18,7 @@ def toggle_autosave():
 
 def save_current(): 
     logger.info("entering save_current")
-    get_workbench().after(10000 , save_current)
+    get_workbench().after(1000 , save_current)
     # schedule the next call first
     #scheduler.enter(2, 1, save_current, (scheduler,))
     try:
